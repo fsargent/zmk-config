@@ -118,6 +118,7 @@
 	&sh LSFT Z	&hm LCTRL X	&kp C		&kp V		&kp B				&kp N		&kp M	&lp LGUI 0	&rp LCTRL 1	&sh RSFT FSLH 
 							&lt NAV_L ESC	&hm LGUI BSPC			&kp SPACE	&sh RSFT RET			
 	>;
+	   
 	};		
 
 	colemak {
@@ -239,5 +240,3 @@
 // 	};
 // };
 
-// Include main cradio keymap
-#include "../../../cradio.dtsi"
