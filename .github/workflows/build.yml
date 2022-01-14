@@ -49,10 +49,8 @@ jobs:
           name: firmware
           path: cradio_left_nice_nano.uf2
 
-
       - name: West Build (cradio Right)
         run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-
       - name: cradio Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
@@ -63,9 +61,8 @@ jobs:
           name: firmware
           path: cradio_right_nice_nano.uf2
 
-
       - name: West Build (Sofle Left)
-        run: west build -s zmk/app -b nice_nano -- -DSHIELD=sofle_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=sofle_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Sofle DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
@@ -81,7 +78,6 @@ jobs:
 
       - name: West Build (Sofle Right)
         run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=sofle_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-
       - name: Sofle Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
