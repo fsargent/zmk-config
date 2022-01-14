@@ -48,10 +48,10 @@ combo_##NAME { \
 //     ╰──────────────────────────╮ NAV meh  BSPC |    |    SPC rais ENT ╭─────────────────────────────╯
 //                               ╰────────────────╯    ╰────────────────╯
 
-COMBO(qw, &to WIN_L,0 4, BASE CMK NAV_L BT_L WIN_L W_NAV_L GAME)
+COMBO(qt, &to BT_L,0 4, BASE CMK NAV_L BT_L WIN_L W_NAV_L GAME)
 COMBO(qg, &to GAME, 0 14, BASE CMK NAV_L BT_L WIN_L W_NAV_L GAME)
 COMBO(qb, &to BT_L, 0 24, BASE CMK NAV_L BT_L WIN_L W_NAV_L GAME) 
-
+COMBO(qp, &to WIN_L, 0 9, BASE CMK NAV_L BT_L WIN_L W_NAV_L GAME)
 
 COMBO(outer_thumbs, &reset, 30 33, BASE CMK NAV_L BT_L WIN_L W_NAV_L GAME)  // both outer thumb keys
 COMBO(left_thumbs, &kp LS(LC(LALT)), 30 31, BASE CMK NAV_L) // Both left thumb keys
