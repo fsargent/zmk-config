@@ -33,6 +33,37 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
+
+      - name: West Build (cradio Left)
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=cradio_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: cradio DTS File
+        if: ${{ always() }}
+        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+      - name: cradio Left Kconfig file
+        run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Rename zmk.uf2
+        run: cp build/zephyr/zmk.uf2 cradio_left_nice_nano.uf2
+      - name: Archive (cradio Left)
+        uses: actions/upload-artifact@v2
+        with:
+          name: firmware
+          path: cradio_left_nice_nano.uf2
+
+
+      - name: West Build (cradio Right)
+        run: west build --pristine -s zmk/app -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+
+      - name: cradio Right Kconfig file
+        run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Rename zmk.uf2
+        run: cp build/zephyr/zmk.uf2 cradio_right_nice_nano.uf2
+      - name: Archive (cradio Right)
+        uses: actions/upload-artifact@v2
+        with:
+          name: firmware
+          path: cradio_right_nice_nano.uf2
+
+
       - name: West Build (Sofle Left)
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=sofle_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: Sofle DTS File
@@ -47,6 +78,7 @@ jobs:
         with:
           name: firmware
           path: sofle_left_nice_nano.uf2
+
       - name: West Build (Sofle Right)
         run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=sofle_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
 
