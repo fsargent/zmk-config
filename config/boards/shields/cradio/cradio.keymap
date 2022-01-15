@@ -112,19 +112,19 @@ keymap {
 	default_layer {
 		label = "Felix";
 		bindings = <
-	&sh LALT Q	&kp W		&kp E		&kp R		&kp T				&kp Y		&kp U	&kp I		&kp O	&kp P
-	&kp A		&kp S		&kp D		&kp F		&kp G				&kp H		&kp J	&kp K		&kp L	&kp QUOT
-	&sh LSFT Z	&hm LCTRL X	&kp C		&kp V		&kp B				&kp N		&kp M	&lp LGUI 0	&rp LCTRL 1	&sh RSFT FSLH 
-							&lt NAV_L ESC	&hm LGUI BSPC			&kp SPACE	&sh RSFT RET			
+	&sh LALT Q	&kp W		&kp E		&kp R		&kp T				&kp Y		&kp U		&kp I		&kp O		&kp P
+	&kp A		&kp S		&kp D		&kp F		&kp G				&kp H		&kp J		&kp K		&kp L		&kp QUOT
+	&sh LSFT Z	&hm LCTRL X	&kp C		&kp V		&kp B				&kp N		&kp M		&lp LGUI 0	&rp LCTRL 1	&sh RSFT FSLH 
+							&lt NAV_L ESC	&hm LGUI BSPC			&kp SPACE	&sh LCTRL RET			
 	>;
 	};		
 
 	colemak {
 		label = "Colemak";
 		bindings = <
-	&sh LALT Q	&kp W		&kp F		&kp P		&kp B				&kp J		&kp L	&kp U	&kp Y	&kp QUOT
-	&kp A		&kp R		&kp S		&kp T		&kp G				&kp M		&kp N	&kp E	&kp I	&kp O
-	&sh LSFT Z	&hm LCTRL X	&kp C		&kp D		&kp V				&kp K		&kp H	&hm LGUI COMMA	&hm LCTRL DOT	&sh RSFT FSLH 
+	&sh LALT Q	&kp W		&kp F		&kp P		&kp B				&kp J		&kp L		&kp U		&kp Y		&kp QUOT
+	&kp A		&kp R		&kp S		&kp T		&kp G				&kp M		&kp N		&kp E		&kp I		&kp O
+	&sh LSFT Z	&hm LCTRL X	&kp C		&kp D		&kp V				&kp K		&kp H		&hm LGUI COMMA	&hm LCTRL DOT	&sh RSFT FSLH 
 							&lt NAV_L ESC	&hm LGUI BSPC			&kp SPACE	&sh RSFT RET			
 	>;
 	};		
@@ -134,7 +134,7 @@ keymap {
 		label = "Nav";
 		bindings = <
 	&kp LS(TAB) 	&kp LA(BSPC)		&kp UP		&kp LA(DEL) 	&kp TAB			&kp LA(LG(ESC))	&none		&kp LBRC	&kp RBRC 	&kp BSLH
-	&sh LALT LA(LEFT)	&kp LEFT		&kp DOWN	&kp RIGHT	&kp LA(RIGHT)		&none		&kp LG(Z)	&kp LS(LG(Z))	&kp COLON	&kp SEMI 
+	&sh LALT LA(LEFT)	&kp LEFT	&kp DOWN	&kp RIGHT	&kp LA(RIGHT)		&none		&kp LG(Z)	&kp LS(LG(Z))	&kp COLON	&kp SEMI 
 	&sh LSFT HOME 	&hm LCTRL LG(LEFT)	&hm LGUI RET	&kp LG(RIGHT)	&kp END			&kp LT		&kp GT		&hm RGUI LBRC	&hm RCTRL RBRC	&sh RSFT BSLH 
 								&to BASE	&trans			&trans		&trans				
 		>;
@@ -146,17 +146,17 @@ keymap {
 	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&trans		&out OUT_USB	&ext_power EP_ON	&ext_power EP_TOG	&reset	
 	&trans		&trans		&trans		&kp LC(LA(DEL))	&bt BT_PRV	&bt BT_NXT	&trans		&ext_power EP_OFF	&trans			&kp LC(LA(DEL))
 	&bt BT_CLR	&trans		&trans		&trans		&out OUT_BLE	&trans		&trans		&trans			&trans			&bootloader
-							&to BASE		&to BASE		&to CMK	&to CMK				
+							&to BASE	&to BASE			&to CMK	&to CMK				
 		>;
 	};
 
 	windows_layer {
 		label = "Windows";
 		bindings = <
-	&kp Q		&kp W		&kp E		&kp R		&kp T			&kp Y		&kp U		&kp I		&kp O		&kp P
-	&kp A		&kp S		&kp D		&kp F		&kp G			&kp H		&kp J		&kp K		&kp L		&kp QUOT
-	&sh LSFT Z	&hm LCTRL X	&hm LALT C	&hm LALT V	&kp B			&kp N		&kp M		&hm RALT COMMA	&hm RCTRL DOT	&sh RSFT FSLH
-							&mo W_NAV_L	&hm LCTRL BKSP		&kp SPACE	&sh LALT RET			
+	&kp Q		&kp W		&kp E	&kp R		&kp T			&kp Y		&kp U		&kp I		&kp O		&kp P
+	&kp A		&kp S		&kp D	&kp F		&kp G			&kp H		&kp J		&kp K		&kp L		&kp QUOT
+	&sh LSFT Z	&hm LCTRL X	&kp C	&kp V		&kp B			&kp N		&kp M		&hm RALT COMMA	&hm RCTRL DOT	&sh RSFT FSLH
+						&lt W_NAV_L ESC	&hm LCTRL BKSP		&kp SPACE	&sh LALT RET			
 			>;
 
 	};
