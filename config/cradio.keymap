@@ -46,7 +46,6 @@
 	combos {
 		#include "combos.keymap"
 	};
-
 	behaviors {
 	sh: shift {
 		compatible = "zmk,behavior-hold-tap";
@@ -80,7 +79,6 @@
 		flavor = "tap-preferred";
 		bindings = <&kp>, <&rparen>;
 	};
-
 	skq: sticky_key_quick_release {
 		compatible = "zmk,behavior-sticky-key";
 		label = "STICKY_KEY_QUICK_RELEASE";
