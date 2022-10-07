@@ -26,24 +26,13 @@
 			// |ADJUST | LCTL | LALT | LGUI | LOWR | SPACE| SPACE |  RAIS | LARW | DARW | UARW  | RARW  |
 
 			bindings = <
-&none	&none	&kp N1		&kp N2		&kp N3		&kp N4	&kp N5		&kp N6		&kp N7		&kp N8		&kp N9 		&lt 2 N0
+&none	&none	&kp N1		&kp N2		&kp N3		&kp N4	&kp N5		&kp N6		&kp N7		&kp N8		&kp N9 		&kp N0
 &none	&none	&kp Q		&kp W		&kp E		&kp R	&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P
 &none	&none	&kp A		&kp S		&kp D		&kp F	&kp G		&kp H		&kp J		&kp K		&kp L		&kp SQT
 &none	&none	&mt LSHIFT Z	&kp X		&kp C		&kp V	&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&mt RSHIFT FSLH
-&none	&none	&mt LCTRL LBKT	&mt LALT RBKT	&kp LGUI	&mo 1	&mt LCTRL BKSP	&kp SPACE	&kp ENTER	&mt RALT SEMI	&mt RALT MINUS	&mt RCTRL EQL
+&none	&none	&kp LCTRL	&kp LALT	&kp LGUI	&mo 1	&mt LGUI BKSP	&kp SPACE	&kp ENTER	&kp SEMI	&kp MINUS	&lt 1 EQL
 			>;
 		};
-
-	nav_layer {
-	label = "Win Nav";
-	bindings = <
-&none	&none	&mt LSHIFT F1		&kp F2		&kp F3		&kp F4		&kp F5		&kp F6	&kp F7 		&kp F8 		&kp F9 		&mt RSHIFT F10
-&none	&none	&kp LS(TAB) 		&kp LC(BSPC)	&kp UP		&kp LC(DEL) 	&kp TAB		&none	&kp LBRC	&kp RBRC 	&kp PIPE	&kp BSLH
-&none	&none	&kp LC(LEFT)		&kp LEFT	&kp DOWN	&kp RIGHT	&kp LC(RIGHT)	&none	&kp LC(Z)	&kp LS(LC(Z))	&kp COLON	&kp SEMI 
-&none	&none	&sh LSFT LC(HOME)	&hm LCTRL HOME 	&hm LALT RET	&kp END		&kp LC(END)	&none	&none		&hm RALT MINUS	&hm RCTRL EQL	&kp FSLH 
-&none	&none	&trans			&trans		&trans		&trans		&trans		&trans 	&trans		&trans		&kp LBKT	&kp RBKT
-	>;
-};
 
 		lower_layer {
 			// -------------------------------------------------------------------------------------------
@@ -53,11 +42,11 @@
 			// |       |  F7  |  F8  |  F9  |  F10 |  F11 |   F12 | LS(#) |LS(|) |      |       |       |
 			// |       |      |      |      |      |      |       |       | NEXT | Vol- | Vol+ | PLAY   |
 			bindings = <
-&none	&none	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&none	&none		&none		&bt BT_CLR	&none
-&none	&none	&none		&none		&none		&none		&none		&none	&none		&none		&none		&none		
-&none	&none	&none		&none		&none		&none		&none		&none	&none		&none		&none		&none		
-&none	&none	&none		&none		&none		&none		&none		&none	&none		&none		&none		&none		
-&none	&none	&trans		&trans		&trans		&trans		&trans		&trans 	&trans		&trans		&kp LBKT	&kp RBKT
+&none	&none	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&none	&none	&none		&bt BT_CLR	&out OUT_TOG	
+&none	&none	&kp LA(BSPC)	&kp LA(LEFT)	&kp UP		&kp LA(RIGHT) 	&kp LA(DEL) 	&trans	&trans	&kp LBKT	&kp RBKT 	&kp PIPE	
+&none	&none	&kp HOME 	&kp LEFT	&kp DOWN	&kp RIGHT	&kp END 	&trans	&trans	&kp LBRC	&kp RBRC	&kp SEMI	
+&none	&none	&mt LSHIFT F1	&kp F2		&kp F3		&kp F4		&kp F5		&kp F6	&kp F7 	&kp F8 		&kp F9 		&mt RSHIFT F10
+&none	&none	&trans		&trans		&trans		&trans		&trans		&trans 	&trans	&trans		&kp LBKT	&kp RBKT
 			>;	 
 		};
 	};
@@ -77,11 +66,9 @@
 	// Tilde: QWE
 	// Tab: QW
 	// USB/BT: Bottom right and Q
-	// BT CLR: Bottom Right and 0
 	// BT 0-4: Bottom right and 1-5
 	// Enter: L and '
 	// Enter: j and k
-	// Alt: . and Right Shfit
 	// 
 
 	combos {
@@ -101,21 +88,11 @@
 			key-positions = <14 15>;
 			bindings = <&kp TAB>;
 		};
-		combo_ralt {
-			timeout-ms = <50>;
-			key-positions = <46 47>;
-			bindings = <&kp RALT>;
-		};
 		combo_output {
 			timeout-ms = <50>;
 			key-positions = <14 59>;
 			bindings = <&out OUT_TOG>;
 		};
-		combo_btclr {
-			timeout-ms = <50>;
-			key-positions = <11 59>;
-			bindings = <&bt BT_CLR>;
-		};	
 		combo_bt0 {
 			timeout-ms = <50>;
 			key-positions = <2 59>;
@@ -141,10 +118,10 @@
 			key-positions = <6 59>;
 			bindings = <&bt BT_SEL 4>;
 		};
-		combo_semi {
+		combo_other_enter {
 			timeout-ms = <50>;
 			key-positions = <34 35>;
-			bindings = <&kp SEMI>;
+			bindings = <&kp ENTER>;
 		};
 		combo_enter {
 			timeout-ms = <50>;
@@ -154,22 +131,22 @@
 		combo_delwd {
 			timeout-ms = <50>;
 			key-positions = <28 29>;
-			bindings = <&kp LC(BSPC)>;
+			bindings = <&kp LA(BSPC)>;
 		};
 		combo_cut {
 			timeout-ms = <50>;
 			key-positions = <38 39>;
-			bindings = <&kp LC(X)>;
+			bindings = <&kp LG(X)>;
 		};
 		combo_copy {
 			timeout-ms = <50>;
 			key-positions = <39 40>;
-			bindings = <&kp LC(C)>;
+			bindings = <&kp LG(C)>;
 		};
 		combo_paste{
 			timeout-ms = <50>;
 			key-positions = <40 41>;
-			bindings = <&kp LC(V)>;
+			bindings = <&kp LG(V)>;
 		};
 	};
 };
