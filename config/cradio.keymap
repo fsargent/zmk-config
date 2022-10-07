@@ -89,7 +89,7 @@
 		quick-release;
 		release-after-ms = <STICKY_KEY_TIMEOUT>;
 	};
- lparen: l_paren {
+ 	lparen: l_paren {
 		compatible = "zmk,behavior-mod-morph";
 		label = "L_PAREN";
 		#binding-cells = <0>;
