@@ -59,7 +59,7 @@
 &none	&none	&mt LSHIFT F1		&kp F2		&kp F3		&kp F4		&kp F5		&kp F6	&kp F7 		&kp F8 		&kp F9 		&mt RSHIFT F10
 &none	&none	&kp LC(BSPC) 		&kp LC(LEFT)	&kp UP		&kp LC(RIGHT)	&kp LC(DEL)	&none	&kp LBRC	&kp RBRC 	&kp PIPE	&kp BSLH
 &none	&none	&kp HOME		&kp LEFT	&kp DOWN	&kp RIGHT	&kp END		&none	&kp LC(Z)	&kp LS(LC(Z))	&kp COLON	&kp SEMI 
-&none	&none	&sh LSFT LC(HOME)	&hm LCTRL HOME 	&hm LALT RET	&kp END		&kp LC(END)	&none	&none		&hm RALT MINUS	&hm RCTRL EQL	&kp FSLH 
+&none	&none	&sh LSFT LC(HOME)	&bhm LCTRL HOME 	&bhm LALT RET	&kp END		&kp LC(END)	&none	&none		&bhm RALT MINUS	&bhm RCTRL EQL	&kp FSLH 
 &none	&none	&trans			&trans		&trans		&trans		&kp ESC		&kp ESC 	&trans		&trans		&kp LBKT	&kp RBKT
 	>;
 };
