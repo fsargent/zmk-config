@@ -20,18 +20,9 @@
 #define STICKY_KEY_TIMEOUT 60000
 
 #define BASE 0
-#define CMK 1
-#define NAV_L 2
-#define BT_L 3
-#define WIN_L 4
-#define W_NAV_L 5
-#define GAME 6
-#define FUN_L 7
-
-// #define NUM_L 4
-// #define SYM_L 5
-// #define MED_L 6
-// #define MEH_L 8
+#define NAV_L 1
+#define BT_L 2
+#define FUN_L 3
 
 //	0	1	2	3	4		5	6	7	8	9 
 //	10	11	12	13	14		15	16	17	18	19
@@ -137,37 +128,6 @@ keymap {
 	&bt BT_CLR	&trans		&trans		&trans		&out OUT_BLE	&trans		&trans		&trans			&trans			&bootloader
 							&to BASE	&to BASE			&to CMK	&to CMK				
 		>;
-	};
-
-	windows_layer {
-		label = "Windows";
-		bindings = <
-	&kp Q		&kp W		&kp E	&kp R		&kp T			&kp Y		&kp U		&kp I		&kp O		&kp P
-	&kp A		&kp S		&kp D	&kp F		&kp G			&kp H		&kp J		&kp K		&kp L		&kp QUOT
-	&sh LSFT Z	&hm LCTRL X	&kp C	&kp V		&kp B			&kp N		&kp M		&hm RALT COMMA	&hm RCTRL DOT	&sh RSFT FSLH
-						&lt W_NAV_L ESC	&hm LCTRL BKSP		&kp SPACE	&sh LALT RET			
-			>;
-
-	};
-
-	windows_nav_layer {
-		label = "Win Nav";
-		bindings = <
-	&kp LS(TAB) 		&kp LC(BSPC)	&kp UP		&kp LC(DEL) 	&kp TAB			&none	&kp LBRC	&kp RBRC 	&kp PIPE	&kp BSLH
-	&kp LC(LEFT)		&kp LEFT	&kp DOWN	&kp RIGHT	&kp LC(RIGHT)		&none	&kp LC(Z)	&kp LS(LC(Z))	&kp COLON	&kp SEMI 
-	&sh LSFT LC(HOME)	&hm LCTRL HOME 	&hm LALT RET	&kp END		&kp LC(END)		&none	&none		&hm RALT MINUS	&hm RCTRL EQL	&kp FSLH 
-								&to BASE	&trans			&trans	&trans				
-		>;
-	};
-
-	games_layer {
-	label = "Games";
-		bindings = <
-	&kp Q		&kp W		&kp E		&kp R		&kp T			&kp Y		&kp U		&kp I		&kp O		&kp P
-	&kp A		&kp S		&kp D		&kp F		&kp G			&kp H		&kp J		&kp K		&kp L		&kp QUOT
-	&kp LSFT	&kp X		&kp C		&kp V		&kp B			&kp N		&kp M		&hm RALT COMMA	&hm RCTRL DOT	&sh RSFT FSLH
-							&kp LCTRL	&kp BKSP		&kp SPACE	&sh LALT RET			
-	>;
 	};
 
 	
