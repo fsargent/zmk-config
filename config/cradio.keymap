@@ -111,9 +111,9 @@ keymap {
 		label = "Felix";
 		bindings = <
 	&sh LALT Q	&kp W		&kp E		&kp R		&kp T				&kp Y		&kp U		&kp I		&kp O		&kp P
-	&hm LSFT A  	&hm LGUI S  	&hm LALT D  	&hm LCTL F	&kp G   			&kp H      	&hm LCTL J   	&hm LALT K   	&hm LGUI L     	&hm LSFT APOS
-	&sh LSFT Z	&hm LCTRL X	&kp C		&kp V		&kp B				&kp N		&kp M		&lp LGUI 0	&rp LCTRL 1	&sh RSFT FSLH 
-							&lt NAV_L ESC	&hm LGUI BSPC			&kp SPACE	&sh LCTRL RET			
+	&hm LSFT A  	&hm LGUI S  	&hm LALT D  	&hm LCTL F	&kp G   			&kp H      	&hm RCTL J   	&hm RALT K   	&hm RGUI L     	&hm RSFT APOS
+	&sh LSFT Z	&kp X		&kp C		&kp V		&kp B				&kp N		&kp M		&kp COMMA	&kp DOT		&sh RSFT FSLH 
+							&lt NAV_L ESC	&kp BSPC			&kp SPACE	&kp RET			
 	>;
 	};		
 
@@ -122,10 +122,10 @@ keymap {
 	nav_layer {
 		label = "Nav";
 		bindings = <
-	&kp LS(TAB) 	&kp LA(BSPC)		&kp UP		&kp LA(DEL) 	&kp TAB			&kp LA(LG(ESC))	&none		&kp LBRC	&kp RBRC 	&kp BSLH
-	&sh LALT LA(LEFT)	&kp LEFT	&kp DOWN	&kp RIGHT	&kp LA(RIGHT)		&none		&kp LG(Z)	&kp LS(LG(Z))	&kp COLON	&kp SEMI 
-	&sh LSFT HOME 	&hm LCTRL LG(LEFT)	&hm LGUI RET	&kp LG(RIGHT)	&kp END			&kp LT		&kp GT		&hm RGUI LBRC	&hm RCTRL RBRC	&sh RSFT BSLH 
-								&to BASE	&trans			&trans		&trans				
+	&kp LS(TAB) 		&kp LA(BSPC)		&kp UP		&kp LA(DEL) 	&kp TAB			&kp LA(LG(ESC))	&none		&kp LBRC	&kp RBRC 	&kp BSLH
+	&sh LALT LA(LEFT)	&kp LEFT		&kp DOWN	&kp RIGHT	&kp LA(RIGHT)		&none		&kp LG(Z)	&kp LS(LG(Z))	&kp COLON	&kp SEMI 
+	&sh LSFT HOME 		&hm LCTRL LG(LEFT)	&hm LGUI RET	&kp LG(RIGHT)	&kp END			&kp LT		&kp GT		&hm RGUI LBRC	&hm RCTRL RBRC	&sh RSFT BSLH 
+									&to BASE	&trans			&trans		&trans				
 		>;
 	};
 
