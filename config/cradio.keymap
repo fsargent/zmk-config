@@ -113,10 +113,10 @@ keymap {
 	nav_layer {
 		label = "Nav";
 		bindings = <
-	&kp LS(TAB) 		&kp LA(BSPC)		&kp UP		&kp LA(DEL) 	&kp TAB			&kp LA(LG(ESC))	&none		&kp LBRC	&kp RBRC 	&kp BSLH
-	&sh LALT LA(LEFT)	&kp LEFT		&kp DOWN	&kp RIGHT	&kp LA(RIGHT)		&none		&kp LG(Z)	&kp LS(LG(Z))	&kp COLON	&kp SEMI 
-	&sh LSFT HOME 		&hm LCTRL LG(LEFT)	&hm LGUI RET	&kp LG(RIGHT)	&kp END			&kp LT		&kp GT		&hm RGUI LBRC	&hm RCTRL RBRC	&sh RSFT BSLH 
-									&to BASE	&trans			&trans		&trans				
+	&kp LS(TAB) 		&kp LA(BSPC)		&kp UP		&kp LA(DEL) 	&kp TAB			&kp LBKT	&kp 7	&kp 8	&kp 9 	&kp RBKT
+	&sh LALT LA(LEFT)	&kp LEFT		&kp DOWN	&kp RIGHT	&kp LA(RIGHT)		&kp LBRC 	&kp 4	&kp 5	&kp 6	&kp RBRC
+	&sh LSFT HOME 		&hm LCTRL LG(LEFT)	&hm LGUI RET	&kp LG(RIGHT)	&kp END			&kp LPAR	&kp 1	&kp 2	&kp 3	&sh RSFT RPAR 
+									&to BASE	&trans			&kp DOT		&kp 0				
 		>;
 	};
 
