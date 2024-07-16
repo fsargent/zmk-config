@@ -47,7 +47,7 @@
 			bindings = <
 &none	&none	&kp N1		&kp N2		&kp N3		&kp N4		&kp N5		&kp N6		&kp N7		&kp N8		&kp N9 		&lt 2 N0
 &none	&none	&kp Q		&kp W		&kp E		&kp R		&kp T		&kp Y		&kp U		&kp I		&kp O		&kp P
-&none	&none   &bhm LSFT A  	&bhm LGUI S  	&bhm LALT D  	&bhm LCTL F	&kp G   	&kp H      	&bhm LCTL J   	&bhm LALT K   	&bhm LGUI L     &bhm LSFT APOS
+&none	&none   &kp A  		&kp LGUI S  	&kp  D  	&kp F		&kp G   	&kp H      	&kp J   	&kp K   	&kp  L   	&kp APOS
 &none	&none	&mt LSHIFT Z	&kp X		&kp C		&kp V		&kp B		&kp N		&kp M		&kp COMMA	&kp DOT		&mt RSHIFT FSLH
 &none	&none	&mt LCTRL LBKT	&mt LALT RBKT	&kp LGUI	&mo 1		&mt LCTRL BKSP	&kp SPACE	&kp ENTER	&mt RALT SEMI	&mt RALT MINUS	&mt RCTRL EQL
 			>;
