@@ -18,7 +18,8 @@ This assembled keyboard has no usable physical reset buttons. While the
 old working firmware is still on both halves, stage both bootloaders:
 
 1. Connect USB to the right half. Hold both left thumbs and tap slash.
-2. Connect USB to the left half. Hold both left thumbs and tap Z.
+   Leave the right half connected in bootloader mode.
+2. Connect USB to the left half using a second cable. Hold both left thumbs and tap Z.
 3. Flash the matching UF2 to each half’s NICENANO bootloader drive.
 
 If both drives are mounted, identify them by controller serial:
@@ -37,7 +38,14 @@ After the initial flash, connect the **left** half by USB and open
 https://zmk.studio/ in Chrome or Edge. The browser must allow USB serial.
 Hold both left thumbs, tap **U** for USB output, then **S** to unlock Studio.
 Select Felix Sweep in Studio and save your edits to persist them.
-The native Studio app also supports Bluetooth connections.
+The native Studio app also supports Bluetooth connections on macOS,
+Windows, and Linux; browser-based BLE access is Linux-only. For BLE,
+select the target computer’s profile, choose Bluetooth output with
+controls+B, unlock with controls+S, and connect in the native app.
+
+USB can supply power from one computer while typing goes to a different
+computer over Bluetooth: select its profile and controls+B. Switch back
+to controls+U when editing through Studio’s USB connection.
 
 Studio changes individual key bindings; combos and behavior timing still
 come from `config/cradio.keymap` and `config/combos.dtsi`. Studio-saved

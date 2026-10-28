@@ -337,3 +337,29 @@ controls+S unlocks it. Existing keymap and bootloader chords preserved.
 Local Studio build hit nanopb/protoc stdout pollution after Python deps
 were installed; use upstream’s maintained GitHub build environment.
 No upgraded firmware has been flashed yet.
+
+## GitHub build verified — 28 October 2026
+
+Config commit a0f2f1fd8a4b3e1eec1c3ee38b0448fa0e77c8c8 on sweep-studio.
+GitHub Actions run 40706111255 succeeded for both halves; combined
+`firmware` artifact downloaded to build/firmware/.
+Left SHA-256: b877ec11935354470df7ef1df9962161b628ef1130af4bebd636879ff0a37382
+Right SHA-256: 81bb984f039dfaedfcf661babc2f3972fc781202c770040e77b4a449b62e0594
+CI logs confirm nice!nano revision 2.0.0, Studio USB serial + BLE on left
+only, 30 s idle / 90 min sleep, and soft off disabled. All four compiled
+layer bindings match working firmware exactly except controls S adds
+Studio unlock. Both bootloader key bindings remain. UI checks passed.
+Preview server now serves this config repo at localhost:8000.
+Old source checkpoint 3934cf34 was pushed to fsargent/zmk glorious-engrammer.
+New source checkout in ../zmk is clean upstream main on sweep-upstream-studio;
+the temporary local port is stashed, and only old unrelated Glove80 files
+remain untracked. Maintained keymap/build source is this config repository.
+
+No upgraded firmware flashed yet. Only the replacement right controller
+F5F4B7E58E58F365 was mounted during the first staging checks; the left
+842AA5C13B65DD18 was not connected over USB. Wait for both bootloaders.
+
+For Bluetooth typing to a different computer while USB supplies power,
+select the destination profile and controls+B. Use controls+U while using
+Studio USB; for Studio over BLE on macOS use the native app with BLE
+output selected. No mounted filesystem is needed for Studio remapping.
