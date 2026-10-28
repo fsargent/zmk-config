@@ -377,3 +377,12 @@ Installed right SHA-256 81bb984f039dfaedfcf661babc2f3972fc781202c770040e77b4a449
 Studio USB/BLE support is now installed; UI/physical typing and Studio
 connection still need user verification. Practice page regenerated without
 pending notice; all HTML/template/generator files are in the config PR.
+
+## Pending update — shifted-number symbol combos
+
+Added Base-only vertical top/home combos with 50 ms timing:
+Q+A=! W+S=@ E+D=# R+F=$ T+G=% Y+H=^ U+J=& I+K=* O+L=( P+quote=).
+Existing shortcuts and home-row holds are retained; no combos added on
+Nav/Num, Bluetooth, or Functions. Four layers and 35 combos.
+Practice page labels, typed output and reference notes updated.
+Needs a new left/central firmware flash; existing Studio cannot edit combos.

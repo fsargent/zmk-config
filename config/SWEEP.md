@@ -35,6 +35,21 @@ This replaces the old Backspace+Space unstick combo; the Bluetooth/control
 layer still has Unstick on Y. Hyper applies on normal typing, navigation,
 and function layers, but not Bluetooth.
 
+## Shifted-symbol combos
+
+On Base, each vertical top/home pair produces its shifted number-row
+symbol with the normal 50 ms combo window:
+
+| Pair | Symbol | Pair | Symbol |
+| --- | --- | --- | --- |
+| Q+A | ! | Y+H | ^ |
+| W+S | @ | U+J | & |
+| E+D | # | I+K | * |
+| R+F | $ | O+L | ( |
+| T+G | % | P+quote | ) |
+
+Existing symbol combos remain available, including F+G for !.
+
 ## Thumb layers
 
 The outer left thumb (formerly Escape) is one-shot Hyper
