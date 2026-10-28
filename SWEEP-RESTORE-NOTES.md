@@ -363,3 +363,17 @@ For Bluetooth typing to a different computer while USB supplies power,
 select the destination profile and controls+B. Use controls+U while using
 Studio USB; for Studio over BLE on macOS use the native app with BLE
 output selected. No mounted filesystem is needed for Studio remapping.
+
+## Upgrade flashed — 28 October 2026
+
+Both bootloaders staged and matched by USB serial before copying:
+right F5F4B7E58E58F365 at /Volumes/NICENANO,
+left 842AA5C13B65DD18 at /Volumes/NICENANO 1.
+Copied the verified GitHub Actions run 40706111255 artifacts right first,
+then left; both data copies completed. Both same serials re-enumerated
+as Felix Sweep. No settings reset or bond clearing was performed.
+Installed left SHA-256 b877ec11935354470df7ef1df9962161b628ef1130af4bebd636879ff0a37382.
+Installed right SHA-256 81bb984f039dfaedfcf661babc2f3972fc781202c770040e77b4a449b62e0594.
+Studio USB/BLE support is now installed; UI/physical typing and Studio
+connection still need user verification. Practice page regenerated without
+pending notice; all HTML/template/generator files are in the config PR.
