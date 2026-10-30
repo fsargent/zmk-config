@@ -405,3 +405,13 @@ Updated generated practice page, template, and layout reference in the
 config repo. Four layers, 35 combos. Needs left-central firmware flash.
 If Studio has saved a runtime keymap, Restore Stock Settings is needed
 for changed source Nav bindings to take effect (see README).
+
+## Pending revision — number chords and visual combo cards
+
+User revised the vertical pairs to unshifted digits 1..0 (QA, WS, ED, RF,
+TG, YH, UJ, IK, OL, P+quote). Holding Shift gives !@#$%^&*(). Existing
+F+G=! remains. Includes the preceding Nav brackets and backslash/pipe.
+Practice page combo cards now contain a miniature 34-key physical layout
+with chord keys highlighted; digit cards show the Shift symbol. Search
+matches both the digit and shifted symbol, and clicks still highlight
+the full keyboard. Four layers/35 combos. Needs left-central flash.

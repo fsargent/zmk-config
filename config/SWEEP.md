@@ -38,20 +38,28 @@ This replaces the old Backspace+Space unstick combo; the Bluetooth/control
 layer still has Unstick on Y. Hyper applies on normal typing, navigation,
 and function layers, but not Bluetooth.
 
-## Shifted-symbol combos
+## Number combos
 
-On Base, each vertical top/home pair produces its shifted number-row
-symbol with the normal 50 ms combo window:
+On Base, each vertical top/home pair produces its number-row digit with
+the normal 50 ms combo window. Hold Shift first for its symbol:
 
-| Pair | Symbol | Pair | Symbol |
-| --- | --- | --- | --- |
-| Q+A | ! | Y+H | ^ |
-| W+S | @ | U+J | & |
-| E+D | # | I+K | * |
-| R+F | $ | O+L | ( |
-| T+G | % | P+quote | ) |
+| Pair | Digit | With Shift |
+| --- | --- | --- |
+| Q+A | 1 | ! |
+| W+S | 2 | @ |
+| E+D | 3 | # |
+| R+F | 4 | $ |
+| T+G | 5 | % |
+| Y+H | 6 | ^ |
+| U+J | 7 | & |
+| I+K | 8 | * |
+| O+L | 9 | ( |
+| P+quote | 0 | ) |
 
 Existing symbol combos remain available, including F+G for !.
+The practice page shows each chord on a miniature keyboard, with its
+normal output and shifted alternative. Click a card to highlight the
+same positions on the main keyboard.
 
 ## Thumb layers
 
