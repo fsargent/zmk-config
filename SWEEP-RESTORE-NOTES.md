@@ -441,7 +441,7 @@ Removed comma+period Equals combo; added comma+period+slash Plus on Base
 The grouped/underlined practice page changes are included; the previously
 flashed number/Nav bracket/backslash firmware remains the installed build.
 
-## Pending revision — adjacent punctuation pairs
+## Flashed revision — adjacent punctuation pairs (30 October 2026)
 
 User replaced the three-key punctuation chords with adjacent pairs:
 N+M=underscore (`25 26`), M+comma=minus (`26 27`), comma+period=equals
@@ -452,3 +452,11 @@ combos. Preview shows the four underlines in physical left-to-right order.
 Includes the still-unflashed quick-release sticky Shift fix. The flash
 attempt before this revision found the left connected in normal mode,
 so no firmware was copied. Do not flash the superseded shift-plus image.
+
+Latest firmware was flashed successfully to left/central serial
+842AA5C13B65DD18 and the same serial re-enumerated as Felix Sweep.
+Source commit c889520; Actions run 41050083904. Left SHA-256:
+8eab13709bfad7e1a073a42a0b41653e2cdf1756c6e0bd0beef86c5eec332b69.
+Includes quick-release one-shot Shift on A+S and L+quote as well as all
+four adjacent punctuation pairs. Right firmware unchanged. Regenerated
+the practice page without its pending notice after the completed flash.
