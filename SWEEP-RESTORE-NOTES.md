@@ -415,3 +415,28 @@ Practice page combo cards now contain a miniature 34-key physical layout
 with chord keys highlighted; digit cards show the Shift symbol. Search
 matches both the digit and shifted symbol, and clicks still highlight
 the full keyboard. Four layers/35 combos. Needs left-central flash.
+
+## Flashed number/bracket update and grouped practice diagrams
+
+Copied the verified left artifact from Actions run 41047054793. Compiled
+checks confirmed 1..0 with no implicit Shift, all four Nav bracket keys,
+and quote+slash backslash on Base/Nav. Left SHA-256:
+d5d5c27047f19282ef792db9d1cbabb53751cb18b8c2f0f4ae4cc9b5f36bbabc.
+Data copy completed and left serial 842AA5C13B65DD18 re-enumerated as
+Felix Sweep. Right was not reflashed; its firmware did not change.
+Practice page now puts drill and combos on separate rows. Number chords
+share one annotated keyboard; horizontal home/bottom-row chords use
+stacked underline patterns, showing exact keys even for nonadjacent
+chords such as J+quote. Other chords retain miniature keyboards.
+
+## Pending update — sticky Shift rollover and punctuation chords
+
+A+S and L+quote now use `&skq` instead of standard `&sk`. The existing
+behavior has quick-release, ignore-modifiers, lazy and a 1000 ms timeout.
+After chord release it releases Shift after the next key press rather
+than waiting for that key’s release, preventing overlapping capitals.
+Holding the modifier chord still acts as held Shift until released.
+Removed comma+period Equals combo; added comma+period+slash Plus on Base
+(`27 28 29`). Period+slash Equals remains. Four layers and 35 combos.
+The grouped/underlined practice page changes are included; the previously
+flashed number/Nav bracket/backslash firmware remains the installed build.

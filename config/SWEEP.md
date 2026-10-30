@@ -23,7 +23,11 @@ A+Z acts as held Shift on the typing layer: press both within 50 ms,
 keep them held while typing, and release either to end Shift.
 Quote+slash emits backslash on Base and Nav/Num, or pipe with Shift held;
 this replaces its former held-Shift action.
-M+comma=minus; comma+period and period+slash=equals; N+M+comma=underscore.
+M+comma=minus; period+slash=equals; comma+period+slash=plus;
+N+M+comma=underscore. Comma+period has no combo binding.
+A+S and L+quote use quick-release one-shot Shift: release the chord,
+then press the target within one second. Shift releases when that key
+registers, preventing a second overlapping letter from being capitalized.
 Alpha combos use the Glove80 default 50 ms window and apply to Base
 unless noted otherwise.
 The two left thumbs open Bluetooth controls while held together, with a
@@ -57,9 +61,11 @@ the normal 50 ms combo window. Hold Shift first for its symbol:
 | P+quote | 0 | ) |
 
 Existing symbol combos remain available, including F+G for !.
-The practice page shows each chord on a miniature keyboard, with its
-normal output and shifted alternative. Click a card to highlight the
-same positions on the main keyboard.
+The practice page groups the numbers in one annotated keyboard image.
+Home/bottom-row chords are stacked underlines beneath spaced keys;
+thumb and cross-row chords use miniature keyboard diagrams. Select any
+chord to highlight it on the main keyboard. The drill and combos occupy
+separate rows, with combo groups using the full width in two columns.
 
 ## Thumb layers
 
