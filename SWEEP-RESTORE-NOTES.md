@@ -460,3 +460,10 @@ Source commit c889520; Actions run 41050083904. Left SHA-256:
 Includes quick-release one-shot Shift on A+S and L+quote as well as all
 four adjacent punctuation pairs. Right firmware unchanged. Regenerated
 the practice page without its pending notice after the completed flash.
+
+## Pending update — swap colon and semicolon
+
+Nav/Num H now types semicolon; quote types colon while retaining the
+right-pinky Ctrl hold. Base quote, other modifiers and all combos are
+unchanged. Regenerated practice page and layout reference; needs a
+left-half flash (or an equivalent Studio remap).

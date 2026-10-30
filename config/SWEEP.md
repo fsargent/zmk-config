@@ -83,7 +83,7 @@ Backspace uses Glove80 thumb timing: balanced, 200 ms tapping term,
 
 Navigation combines ESDF arrows with the right-hand number pad:
 U/I/O=7/8/9, J/K/L=4/5/6, M/comma/period=1/2/3, Space=0,
-Y=plus, H=colon, N=asterisk, P=minus, quote=semicolon, slash=divide,
+Y=plus, H=semicolon, N=asterisk, P=minus, quote=colon, slash=divide,
 outer right thumb=decimal.
 Q and T type opening/closing braces; A and G type opening/closing square
 brackets. A retains Ctrl when held. These are individual keys, not combos.

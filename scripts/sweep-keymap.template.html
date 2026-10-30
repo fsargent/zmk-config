@@ -27,7 +27,7 @@
 <nav class="tabs" id="tabs" role="tablist" aria-label="Keyboard layer"></nav>
 <section id="layer-panel" role="tabpanel" aria-labelledby="layer-tab-0">
 <div class="layer-summary"><div><div class="eyebrow" id="layer-index"></div><h2 id="layer-title"></h2><p id="layer-description"></p></div><div class="entry" id="layer-entry"></div></div>
-<div class="pending" id="pending" hidden>Pending firmware update: N+M = underscore, M+comma = minus, comma+period = equals, period+slash = plus. A+S and L+quote use quick-release one-shot Shift. Flash the left controller to apply these changes.</div>
+<div class="pending" id="pending" hidden>Pending firmware update: Nav/Num H types semicolon and the quote position types colon (Ctrl when held). Flash the left controller to apply the swap.</div>
 <div class="keyboard" id="keyboard" aria-label="Sweep physical key layout"></div>
 <div class="key-footer"><span><i class="dot"></i>Small green labels show hold actions or one-shot behavior.</span><span>Muted keys inherit the base binding. Corner labels show physical key positions.</span></div>
 <div class="selection" id="selection" aria-live="polite">Choose a key to see its tap action, hold action, and timing.</div>
@@ -45,7 +45,7 @@
 const DATA = /*__KEYMAP_DATA__*/;
 const META=[
  {title:'Typing',entry:'Default layer',how:'Normal typing',desc:'QWERTY on tap. Ctrl · Alt · Cmd · Shift from pinky to index, mirrored on the right. The outer left thumb is one-shot Hyper (Ctrl+Alt+Shift+Cmd); S + D + F sends Escape. The outer right thumb sends Enter. Vertical top/home combos type 1–0; hold Shift for their symbols.',exit:'Normal typing is the default layer.'},
- {title:'Nav / Num',entry:'Hold Backspace',how:'Hold the left inner thumb',desc:'ESDF arrows on the left, number pad on the right. Home-row holds retain Ctrl · Alt · Cmd · Shift. Space = 0; the outer right thumb types the decimal point. Q/T = braces, A/G = square brackets. Quote = semicolon, H = colon, P = minus. Z/X/C/V switch windows and tabs.',exit:'Release Backspace.'},
+ {title:'Nav / Num',entry:'Hold Backspace',how:'Hold the left inner thumb',desc:'ESDF arrows on the left, number pad on the right. Home-row holds retain Ctrl · Alt · Cmd · Shift. Space = 0; the outer right thumb types the decimal point. Q/T = braces, A/G = square brackets. Quote = colon, H = semicolon, P = minus. Z/X/C/V switch windows and tabs.',exit:'Release Backspace.'},
  {title:'Bluetooth & controls',entry:'Hold Esc-position + Backspace',how:'Hold both left thumbs',desc:'Profiles follow Nav / Num: M/comma/period = 1/2/3, J/K = 4/5. U = USB, B = Bluetooth, Enter = clear current bond. Z = left bootloader; slash = right bootloader; S = Studio unlock.',exit:'Release either left thumb to return to typing.'},
  {title:'Functions',entry:'Space + Enter',how:'One-shot layer',desc:'Q–P become F1–F10; A/S become F11/F12. Tap the combo, then your function key.',exit:'The one-shot ends after the next key. The Esc thumb also returns to Typing.'},
 ];
