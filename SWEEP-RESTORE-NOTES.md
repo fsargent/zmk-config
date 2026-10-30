@@ -378,11 +378,16 @@ Studio USB/BLE support is now installed; UI/physical typing and Studio
 connection still need user verification. Practice page regenerated without
 pending notice; all HTML/template/generator files are in the config PR.
 
-## Pending update — shifted-number symbol combos
+## Flashed update — shifted-number symbol combos (30 October 2026)
 
 Added Base-only vertical top/home combos with 50 ms timing:
 Q+A=! W+S=@ E+D=# R+F=$ T+G=% Y+H=^ U+J=& I+K=* O+L=( P+quote=).
 Existing shortcuts and home-row holds are retained; no combos added on
 Nav/Num, Bluetooth, or Functions. Four layers and 35 combos.
 Practice page labels, typed output and reference notes updated.
-Needs a new left/central firmware flash; existing Studio cannot edit combos.
+Flashed the left/central controller (`842AA5C13B65DD18`) using the
+verified artifact from GitHub Actions run 40721654349. Data copy completed
+and the same serial re-enumerated as Felix Sweep. Left SHA-256:
+`e9152c4e933bedfec5396c9e6576e1fa84a218f0f587a84d492b9a914298e5c9`.
+Right firmware remains unchanged. Practice page regenerated without the
+pending firmware notice. Existing Studio cannot edit combos.
