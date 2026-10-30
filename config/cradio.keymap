@@ -123,8 +123,8 @@
         nav_layer {
             display-name = "Nav / Num";
             bindings = <
-        &sk LSHFT       &kp LG(LS(Z)) &kp UP          &kp BSPC          &kp LG(X)      &kp PLUS &kp N7         &kp N8         &kp N9         &kp MINUS
-        &hr_lp LCTRL LA(LEFT) &hr_lr LALT LEFT &hr_lm LGUI DOWN &hr_li LSFT RIGHT &kp LA(RIGHT) &kp COLON &hr_ri LSFT N4 &hr_rm LGUI N5 &hr_rr LALT N6 &hr_rp LCTRL SEMI
+        &kp LBRC        &kp LG(LS(Z)) &kp UP          &kp BSPC          &kp RBRC      &kp PLUS &kp N7         &kp N8         &kp N9         &kp MINUS
+        &hr_lp LCTRL LBKT &hr_lr LALT LEFT &hr_lm LGUI DOWN &hr_li LSFT RIGHT &kp RBKT      &kp SEMI &hr_ri LSFT N4 &hr_rm LGUI N5 &hr_rr LALT N6 &hr_rp LCTRL COLON
         &kp LS(LG(GRAVE)) &kp LS(LC(TAB)) &kp LC(TAB) &kp LG(GRAVE)       &kp LG(F)        &kp ASTRK &kp N1         &kp N2         &kp N3         &kp FSLH
                                               &trans          &trans                       &kp N0     &kp DOT
             >;
