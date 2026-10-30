@@ -23,8 +23,9 @@ A+Z acts as held Shift on the typing layer: press both within 50 ms,
 keep them held while typing, and release either to end Shift.
 Quote+slash emits backslash on Base and Nav/Num, or pipe with Shift held;
 this replaces its former held-Shift action.
-M+comma=minus; period+slash=equals; comma+period+slash=plus;
-N+M+comma=underscore. Comma+period has no combo binding.
+The right bottom row uses adjacent two-key chords, left to right:
+N+M=underscore, M+comma=minus, comma+period=equals, period+slash=plus.
+There are no three-key punctuation chords.
 A+S and L+quote use quick-release one-shot Shift: release the chord,
 then press the target within one second. Shift releases when that key
 registers, preventing a second overlapping letter from being capitalized.

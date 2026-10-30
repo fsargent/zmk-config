@@ -440,3 +440,15 @@ Removed comma+period Equals combo; added comma+period+slash Plus on Base
 (`27 28 29`). Period+slash Equals remains. Four layers and 35 combos.
 The grouped/underlined practice page changes are included; the previously
 flashed number/Nav bracket/backslash firmware remains the installed build.
+
+## Pending revision — adjacent punctuation pairs
+
+User replaced the three-key punctuation chords with adjacent pairs:
+N+M=underscore (`25 26`), M+comma=minus (`26 27`), comma+period=equals
+(`27 28`), period+slash=plus (`28 29`). All are Base-only and 50 ms.
+Removed N+M+comma and comma+period+slash chords. Escape S+D+F and Enter
+J+K+L remain: only punctuation chords were simplified. Four layers/35
+combos. Preview shows the four underlines in physical left-to-right order.
+Includes the still-unflashed quick-release sticky Shift fix. The flash
+attempt before this revision found the left connected in normal mode,
+so no firmware was copied. Do not flash the superseded shift-plus image.
