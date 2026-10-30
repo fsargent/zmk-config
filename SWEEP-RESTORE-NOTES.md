@@ -461,9 +461,16 @@ Includes quick-release one-shot Shift on A+S and L+quote as well as all
 four adjacent punctuation pairs. Right firmware unchanged. Regenerated
 the practice page without its pending notice after the completed flash.
 
-## Pending update — swap colon and semicolon
+## Flashed update — swap colon and semicolon
 
 Nav/Num H now types semicolon; quote types colon while retaining the
 right-pinky Ctrl hold. Base quote, other modifiers and all combos are
 unchanged. Regenerated practice page and layout reference; needs a
 left-half flash (or an equivalent Studio remap).
+
+Flashed successfully to left controller 842AA5C13B65DD18; data copy
+completed and the same serial re-enumerated as Felix Sweep. Build source
+714b914; Actions run 41051149556. Left SHA-256:
+b590d5918943620b55ba60a5b97a937c27bc9e12ab13166cc2d0858dba9432b7.
+Nav H=semicolon and quote=colon, retaining Ctrl hold. Right unchanged.
+Practice page regenerated without the pending firmware notice.
