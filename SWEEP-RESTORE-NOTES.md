@@ -391,3 +391,17 @@ and the same serial re-enumerated as Felix Sweep. Left SHA-256:
 `e9152c4e933bedfec5396c9e6576e1fa84a218f0f587a84d492b9a914298e5c9`.
 Right firmware remains unchanged. Practice page regenerated without the
 pending firmware notice. Existing Studio cannot edit combos.
+
+## Pending update — Nav brackets and backslash/pipe (30 October 2026)
+
+On Nav/Num, individual Q={ T=} A=[ G=]. A keeps its Ctrl home-row hold
+and existing timing; other home-row holds stay unchanged. Replaces Q’s
+sticky Shift, T’s Cut, and A/G word-jump taps.
+Quote+slash (`19 29`) now binds `&kp BSLH` on Base and Nav/Num, replacing
+its former held Shift. Existing Shift modifiers naturally produce pipe;
+no custom mod-morph behavior is needed. It is disabled on controls so
+slash still enters the right bootloader there. A+Z remains held Shift.
+Updated generated practice page, template, and layout reference in the
+config repo. Four layers, 35 combos. Needs left-central firmware flash.
+If Studio has saved a runtime keymap, Restore Stock Settings is needed
+for changed source Nav bindings to take effect (see README).

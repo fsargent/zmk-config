@@ -19,10 +19,13 @@ ported, including D+F=Tab, S+D=grave, A+S=sticky Shift, J+K=Alt+Backspace,
 J+K+L=Enter, J+quote=Caps Word, and Z+X/X+C/C+V=cut/copy/paste.
 Z+slash toggles Caps Lock. A+S+D+F and J+K+L+quote each arm one-shot
 Hyper (Ctrl+Alt+Shift+Cmd) on Base; release the chord before the target key.
-A+Z and quote+slash act as held Shift on the typing layer: press both
-within 50 ms, keep them held while typing, and release either to end Shift.
+A+Z acts as held Shift on the typing layer: press both within 50 ms,
+keep them held while typing, and release either to end Shift.
+Quote+slash emits backslash on Base and Nav/Num, or pipe with Shift held;
+this replaces its former held-Shift action.
 M+comma=minus; comma+period and period+slash=equals; N+M+comma=underscore.
-Alpha combos use the Glove80 default 50 ms window and apply to typing layers only.
+Alpha combos use the Glove80 default 50 ms window and apply to Base
+unless noted otherwise.
 The two left thumbs open Bluetooth controls while held together, with a
 150 ms combo window. Releasing either thumb exits the momentary layer.
 Combos that require extra Glove80 columns or thumb keys are omitted.
@@ -67,6 +70,8 @@ Navigation combines ESDF arrows with the right-hand number pad:
 U/I/O=7/8/9, J/K/L=4/5/6, M/comma/period=1/2/3, Space=0,
 Y=plus, H=colon, N=asterisk, P=minus, quote=semicolon, slash=divide,
 outer right thumb=decimal.
+Q and T type opening/closing braces; A and G type opening/closing square
+brackets. A retains Ctrl when held. These are individual keys, not combos.
 Both home rows retain the normal modifier holds (Ctrl/Alt/Cmd/Shift,
 mirrored on the right), with the same timing and positional rules.
 Tap the keys for their arrows, numbers, or symbols; hold for modifiers.
