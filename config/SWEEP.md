@@ -97,6 +97,20 @@ Z=Cmd+Shift+grave (previous window), X=Ctrl+Shift+Tab (previous tab),
 C=Ctrl+Tab (next tab), V=Cmd+grave (next window). B remains Cmd+F (Find).
 The separate Numbers layer has been removed.
 
+## Functions grid
+
+Tap Space + the outer right thumb together for the one-shot Functions layer.
+The next key sends its function binding, then returns to typing.
+
+| Left keys | Output | Right keys | Output |
+| --- | --- | --- | --- |
+| X / C / V | F1 / F2 / F3 | M / comma / period | Hyper+F1 / F2 / F3 |
+| S / D / F | F4 / F5 / F6 | J / K / L | Hyper+F4 / F5 / F6 |
+| W / E / R | F7 / F8 / F9 | U / I / O | Hyper+F7 / F8 / F9 |
+| Z / A / Q | F10 / F11 / F12 | slash / quote / P | Hyper+F10 / F11 / F12 |
+
+Hyper includes Ctrl+Alt+Shift+Cmd. The outer left thumb returns to Base.
+
 ## Bluetooth controls
 
 Hold both left thumbs (the former Esc and Backspace positions), then:
