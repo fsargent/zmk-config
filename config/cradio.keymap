@@ -116,7 +116,7 @@
         &kp Q        &kp W        &kp E        &kp R        &kp T              &kp Y        &kp U        &kp I           &kp O          &kp P
         &hr_lp LCTRL A &hr_lr LALT S &hr_lm LGUI D &hr_li LSFT F &kp G              &kp H        &hr_ri LSFT J &hr_rm LGUI K &hr_rr LALT L &hr_rp LCTRL SQT
         &kp Z   &kp X  &kp C        &kp V        &kp B              &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                                              &hyper LG(LS(LA(LCTRL))) &thumb NAV_L BSPC              &kp SPACE    &kp RET
+                                              &hyper LG(LS(LA(LCTRL))) &thumb NAV_L BSPC              &kp SPACE    &kp LG(LS(LA(LC(J))))
             >;
         };
 

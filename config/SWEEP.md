@@ -43,26 +43,26 @@ This replaces the old Backspace+Space unstick combo; the Bluetooth/control
 layer still has Unstick on Y. Hyper applies on normal typing, navigation,
 and function layers, but not Bluetooth.
 
-## Number combos
+## Shifted number combos
 
-On Base, each vertical top/home pair produces its number-row digit with
-the normal 50 ms combo window. Hold Shift first for its symbol:
+On Base, each vertical top/home pair produces its shifted number-row symbol
+directly, with the normal 50 ms combo window:
 
-| Pair | Digit | With Shift |
-| --- | --- | --- |
-| Q+A | 1 | ! |
-| W+S | 2 | @ |
-| E+D | 3 | # |
-| R+F | 4 | $ |
-| T+G | 5 | % |
-| Y+H | 6 | ^ |
-| U+J | 7 | & |
-| I+K | 8 | * |
-| O+L | 9 | ( |
-| P+quote | 0 | ) |
+| Pair | Output |
+| --- | --- |
+| Q+A | ! |
+| W+S | @ |
+| E+D | # |
+| R+F | $ |
+| T+G | % |
+| Y+H | ^ |
+| U+J | & |
+| I+K | * |
+| O+L | ( |
+| P+quote | ) |
 
 Existing symbol combos remain available, including F+G for !.
-The practice page groups the numbers in one annotated keyboard image.
+The practice page groups these symbols in one annotated keyboard image.
 Home/bottom-row chords are stacked underlines beneath spaced keys;
 thumb and cross-row chords use miniature keyboard diagrams. Select any
 chord to highlight it on the main keyboard. The drill and combos occupy
@@ -74,8 +74,8 @@ The outer left thumb (formerly Escape) is one-shot Hyper
 (Ctrl+Alt+Shift+Cmd). Tap and release it, then press the target within
 five seconds. Quick-release and lazy activation limit Hyper to one key.
 S+D+F sends Escape on the typing layer (50 ms combo window).
-The outer right thumb sends Enter on Base and decimal on Nav / Num.
-J+K+L also sends Enter; Backspace+Space also arms one-shot Hyper.
+The outer right thumb sends Hyper+J (Ctrl+Alt+Shift+Cmd+J) on Base
+and decimal on Nav / Num. J+K+L sends Enter; Backspace+Space also arms one-shot Hyper.
 
 Tap Backspace for Backspace; hold it for Nav / Num.
 Backspace uses Glove80 thumb timing: balanced, 200 ms tapping term,
