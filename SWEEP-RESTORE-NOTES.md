@@ -378,11 +378,99 @@ Studio USB/BLE support is now installed; UI/physical typing and Studio
 connection still need user verification. Practice page regenerated without
 pending notice; all HTML/template/generator files are in the config PR.
 
-## Pending update — shifted-number symbol combos
+## Flashed update — shifted-number symbol combos (30 October 2026)
 
 Added Base-only vertical top/home combos with 50 ms timing:
 Q+A=! W+S=@ E+D=# R+F=$ T+G=% Y+H=^ U+J=& I+K=* O+L=( P+quote=).
 Existing shortcuts and home-row holds are retained; no combos added on
 Nav/Num, Bluetooth, or Functions. Four layers and 35 combos.
 Practice page labels, typed output and reference notes updated.
-Needs a new left/central firmware flash; existing Studio cannot edit combos.
+Flashed the left/central controller (`842AA5C13B65DD18`) using the
+verified artifact from GitHub Actions run 40721654349. Data copy completed
+and the same serial re-enumerated as Felix Sweep. Left SHA-256:
+`e9152c4e933bedfec5396c9e6576e1fa84a218f0f587a84d492b9a914298e5c9`.
+Right firmware remains unchanged. Practice page regenerated without the
+pending firmware notice. Existing Studio cannot edit combos.
+
+## Pending update — Nav brackets and backslash/pipe (30 October 2026)
+
+On Nav/Num, individual Q={ T=} A=[ G=]. A keeps its Ctrl home-row hold
+and existing timing; other home-row holds stay unchanged. Replaces Q’s
+sticky Shift, T’s Cut, and A/G word-jump taps.
+Quote+slash (`19 29`) now binds `&kp BSLH` on Base and Nav/Num, replacing
+its former held Shift. Existing Shift modifiers naturally produce pipe;
+no custom mod-morph behavior is needed. It is disabled on controls so
+slash still enters the right bootloader there. A+Z remains held Shift.
+Updated generated practice page, template, and layout reference in the
+config repo. Four layers, 35 combos. Needs left-central firmware flash.
+If Studio has saved a runtime keymap, Restore Stock Settings is needed
+for changed source Nav bindings to take effect (see README).
+
+## Pending revision — number chords and visual combo cards
+
+User revised the vertical pairs to unshifted digits 1..0 (QA, WS, ED, RF,
+TG, YH, UJ, IK, OL, P+quote). Holding Shift gives !@#$%^&*(). Existing
+F+G=! remains. Includes the preceding Nav brackets and backslash/pipe.
+Practice page combo cards now contain a miniature 34-key physical layout
+with chord keys highlighted; digit cards show the Shift symbol. Search
+matches both the digit and shifted symbol, and clicks still highlight
+the full keyboard. Four layers/35 combos. Needs left-central flash.
+
+## Flashed number/bracket update and grouped practice diagrams
+
+Copied the verified left artifact from Actions run 41047054793. Compiled
+checks confirmed 1..0 with no implicit Shift, all four Nav bracket keys,
+and quote+slash backslash on Base/Nav. Left SHA-256:
+d5d5c27047f19282ef792db9d1cbabb53751cb18b8c2f0f4ae4cc9b5f36bbabc.
+Data copy completed and left serial 842AA5C13B65DD18 re-enumerated as
+Felix Sweep. Right was not reflashed; its firmware did not change.
+Practice page now puts drill and combos on separate rows. Number chords
+share one annotated keyboard; horizontal home/bottom-row chords use
+stacked underline patterns, showing exact keys even for nonadjacent
+chords such as J+quote. Other chords retain miniature keyboards.
+
+## Pending update — sticky Shift rollover and punctuation chords
+
+A+S and L+quote now use `&skq` instead of standard `&sk`. The existing
+behavior has quick-release, ignore-modifiers, lazy and a 1000 ms timeout.
+After chord release it releases Shift after the next key press rather
+than waiting for that key’s release, preventing overlapping capitals.
+Holding the modifier chord still acts as held Shift until released.
+Removed comma+period Equals combo; added comma+period+slash Plus on Base
+(`27 28 29`). Period+slash Equals remains. Four layers and 35 combos.
+The grouped/underlined practice page changes are included; the previously
+flashed number/Nav bracket/backslash firmware remains the installed build.
+
+## Flashed revision — adjacent punctuation pairs (30 October 2026)
+
+User replaced the three-key punctuation chords with adjacent pairs:
+N+M=underscore (`25 26`), M+comma=minus (`26 27`), comma+period=equals
+(`27 28`), period+slash=plus (`28 29`). All are Base-only and 50 ms.
+Removed N+M+comma and comma+period+slash chords. Escape S+D+F and Enter
+J+K+L remain: only punctuation chords were simplified. Four layers/35
+combos. Preview shows the four underlines in physical left-to-right order.
+Includes the still-unflashed quick-release sticky Shift fix. The flash
+attempt before this revision found the left connected in normal mode,
+so no firmware was copied. Do not flash the superseded shift-plus image.
+
+Latest firmware was flashed successfully to left/central serial
+842AA5C13B65DD18 and the same serial re-enumerated as Felix Sweep.
+Source commit c889520; Actions run 41050083904. Left SHA-256:
+8eab13709bfad7e1a073a42a0b41653e2cdf1756c6e0bd0beef86c5eec332b69.
+Includes quick-release one-shot Shift on A+S and L+quote as well as all
+four adjacent punctuation pairs. Right firmware unchanged. Regenerated
+the practice page without its pending notice after the completed flash.
+
+## Flashed update — swap colon and semicolon
+
+Nav/Num H now types semicolon; quote types colon while retaining the
+right-pinky Ctrl hold. Base quote, other modifiers and all combos are
+unchanged. Regenerated practice page and layout reference; needs a
+left-half flash (or an equivalent Studio remap).
+
+Flashed successfully to left controller 842AA5C13B65DD18; data copy
+completed and the same serial re-enumerated as Felix Sweep. Build source
+714b914; Actions run 41051149556. Left SHA-256:
+b590d5918943620b55ba60a5b97a937c27bc9e12ab13166cc2d0858dba9432b7.
+Nav H=semicolon and quote=colon, retaining Ctrl hold. Right unchanged.
+Practice page regenerated without the pending firmware notice.

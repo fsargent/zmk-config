@@ -19,10 +19,18 @@ ported, including D+F=Tab, S+D=grave, A+S=sticky Shift, J+K=Alt+Backspace,
 J+K+L=Enter, J+quote=Caps Word, and Z+X/X+C/C+V=cut/copy/paste.
 Z+slash toggles Caps Lock. A+S+D+F and J+K+L+quote each arm one-shot
 Hyper (Ctrl+Alt+Shift+Cmd) on Base; release the chord before the target key.
-A+Z and quote+slash act as held Shift on the typing layer: press both
-within 50 ms, keep them held while typing, and release either to end Shift.
-M+comma=minus; comma+period and period+slash=equals; N+M+comma=underscore.
-Alpha combos use the Glove80 default 50 ms window and apply to typing layers only.
+A+Z acts as held Shift on the typing layer: press both within 50 ms,
+keep them held while typing, and release either to end Shift.
+Quote+slash emits backslash on Base and Nav/Num, or pipe with Shift held;
+this replaces its former held-Shift action.
+The right bottom row uses adjacent two-key chords, left to right:
+N+M=underscore, M+comma=minus, comma+period=equals, period+slash=plus.
+There are no three-key punctuation chords.
+A+S and L+quote use quick-release one-shot Shift: release the chord,
+then press the target within one second. Shift releases when that key
+registers, preventing a second overlapping letter from being capitalized.
+Alpha combos use the Glove80 default 50 ms window and apply to Base
+unless noted otherwise.
 The two left thumbs open Bluetooth controls while held together, with a
 150 ms combo window. Releasing either thumb exits the momentary layer.
 Combos that require extra Glove80 columns or thumb keys are omitted.
@@ -35,20 +43,30 @@ This replaces the old Backspace+Space unstick combo; the Bluetooth/control
 layer still has Unstick on Y. Hyper applies on normal typing, navigation,
 and function layers, but not Bluetooth.
 
-## Shifted-symbol combos
+## Shifted number combos
 
-On Base, each vertical top/home pair produces its shifted number-row
-symbol with the normal 50 ms combo window:
+On Base, each vertical top/home pair produces its shifted number-row symbol
+directly, with the normal 50 ms combo window:
 
-| Pair | Symbol | Pair | Symbol |
-| --- | --- | --- | --- |
-| Q+A | ! | Y+H | ^ |
-| W+S | @ | U+J | & |
-| E+D | # | I+K | * |
-| R+F | $ | O+L | ( |
-| T+G | % | P+quote | ) |
+| Pair | Output |
+| --- | --- |
+| Q+A | ! |
+| W+S | @ |
+| E+D | # |
+| R+F | $ |
+| T+G | % |
+| Y+H | ^ |
+| U+J | & |
+| I+K | * |
+| O+L | ( |
+| P+quote | ) |
 
 Existing symbol combos remain available, including F+G for !.
+The practice page groups these symbols in one annotated keyboard image.
+Home/bottom-row chords are stacked underlines beneath spaced keys;
+thumb and cross-row chords use miniature keyboard diagrams. Select any
+chord to highlight it on the main keyboard. The drill and combos occupy
+separate rows, with combo groups using the full width in two columns.
 
 ## Thumb layers
 
@@ -56,8 +74,8 @@ The outer left thumb (formerly Escape) is one-shot Hyper
 (Ctrl+Alt+Shift+Cmd). Tap and release it, then press the target within
 five seconds. Quick-release and lazy activation limit Hyper to one key.
 S+D+F sends Escape on the typing layer (50 ms combo window).
-The outer right thumb sends Enter on Base and decimal on Nav / Num.
-J+K+L also sends Enter; Backspace+Space also arms one-shot Hyper.
+The outer right thumb sends Hyper+J (Ctrl+Alt+Shift+Cmd+J) on Base
+and decimal on Nav / Num. J+K+L sends Enter; Backspace+Space also arms one-shot Hyper.
 
 Tap Backspace for Backspace; hold it for Nav / Num.
 Backspace uses Glove80 thumb timing: balanced, 200 ms tapping term,
@@ -65,8 +83,10 @@ Backspace uses Glove80 thumb timing: balanced, 200 ms tapping term,
 
 Navigation combines ESDF arrows with the right-hand number pad:
 U/I/O=7/8/9, J/K/L=4/5/6, M/comma/period=1/2/3, Space=0,
-Y=plus, H=colon, N=asterisk, P=minus, quote=semicolon, slash=divide,
+Y=plus, H=semicolon, N=asterisk, P=minus, quote=colon, slash=divide,
 outer right thumb=decimal.
+Q and T type opening/closing braces; A and G type opening/closing square
+brackets. A retains Ctrl when held. These are individual keys, not combos.
 Both home rows retain the normal modifier holds (Ctrl/Alt/Cmd/Shift,
 mirrored on the right), with the same timing and positional rules.
 Tap the keys for their arrows, numbers, or symbols; hold for modifiers.
@@ -76,6 +96,20 @@ Nav Z/X/C/V match the four Glove80 bottom-row window/tab shortcuts:
 Z=Cmd+Shift+grave (previous window), X=Ctrl+Shift+Tab (previous tab),
 C=Ctrl+Tab (next tab), V=Cmd+grave (next window). B remains Cmd+F (Find).
 The separate Numbers layer has been removed.
+
+## Functions grid
+
+Tap Space + the outer right thumb together for the one-shot Functions layer.
+The next key sends its function binding, then returns to typing.
+
+| Left keys | Output | Right keys | Output |
+| --- | --- | --- | --- |
+| X / C / V | F1 / F2 / F3 | M / comma / period | Hyper+F1 / F2 / F3 |
+| S / D / F | F4 / F5 / F6 | J / K / L | Hyper+F4 / F5 / F6 |
+| W / E / R | F7 / F8 / F9 | U / I / O | Hyper+F7 / F8 / F9 |
+| Z / A / Q | F10 / F11 / F12 | slash / quote / P | Hyper+F10 / F11 / F12 |
+
+Hyper includes Ctrl+Alt+Shift+Cmd. The outer left thumb returns to Base.
 
 ## Bluetooth controls
 

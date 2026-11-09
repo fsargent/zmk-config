@@ -116,15 +116,15 @@
         &kp Q        &kp W        &kp E        &kp R        &kp T              &kp Y        &kp U        &kp I           &kp O          &kp P
         &hr_lp LCTRL A &hr_lr LALT S &hr_lm LGUI D &hr_li LSFT F &kp G              &kp H        &hr_ri LSFT J &hr_rm LGUI K &hr_rr LALT L &hr_rp LCTRL SQT
         &kp Z   &kp X  &kp C        &kp V        &kp B              &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH
-                                              &hyper LG(LS(LA(LCTRL))) &thumb NAV_L BSPC              &kp SPACE    &kp RET
+                                              &hyper LG(LS(LA(LCTRL))) &thumb NAV_L BSPC              &kp SPACE    &kp LG(LS(LA(LC(J))))
             >;
         };
 
         nav_layer {
             display-name = "Nav / Num";
             bindings = <
-        &sk LSHFT       &kp LG(LS(Z)) &kp UP          &kp BSPC          &kp LG(X)      &kp PLUS &kp N7         &kp N8         &kp N9         &kp MINUS
-        &hr_lp LCTRL LA(LEFT) &hr_lr LALT LEFT &hr_lm LGUI DOWN &hr_li LSFT RIGHT &kp LA(RIGHT) &kp COLON &hr_ri LSFT N4 &hr_rm LGUI N5 &hr_rr LALT N6 &hr_rp LCTRL SEMI
+        &kp LBRC        &kp LG(LS(Z)) &kp UP          &kp BSPC          &kp RBRC      &kp PLUS &kp N7         &kp N8         &kp N9         &kp MINUS
+        &hr_lp LCTRL LBKT &hr_lr LALT LEFT &hr_lm LGUI DOWN &hr_li LSFT RIGHT &kp RBKT      &kp SEMI &hr_ri LSFT N4 &hr_rm LGUI N5 &hr_rr LALT N6 &hr_rp LCTRL COLON
         &kp LS(LG(GRAVE)) &kp LS(LC(TAB)) &kp LC(TAB) &kp LG(GRAVE)       &kp LG(F)        &kp ASTRK &kp N1         &kp N2         &kp N3         &kp FSLH
                                               &trans          &trans                       &kp N0     &kp DOT
             >;
@@ -143,9 +143,9 @@
         fun_layer {
             display-name = "Functions";
             bindings = <
-        &kp F1   &kp F2     &kp F3          &kp F4  &kp F5      &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-        &kp F11  &kp F12    &trans          &trans  &trans      &trans  &trans  &trans  &trans  &trans
-        &kp SLCK &kp PSCRN  &kp PAUSE_BREAK &trans  &trans      &trans  &trans  &trans  &trans  &trans
+        &kp F12   &kp F7   &kp F8   &kp F9   &trans   &trans   &kp LG(LS(LA(LC(F7))))   &kp LG(LS(LA(LC(F8))))   &kp LG(LS(LA(LC(F9))))   &kp LG(LS(LA(LC(F12))))
+        &kp F11   &kp F4   &kp F5   &kp F6   &trans   &trans   &kp LG(LS(LA(LC(F4))))   &kp LG(LS(LA(LC(F5))))   &kp LG(LS(LA(LC(F6))))   &kp LG(LS(LA(LC(F11))))
+        &kp F10   &kp F1   &kp F2   &kp F3   &trans   &trans   &kp LG(LS(LA(LC(F1))))   &kp LG(LS(LA(LC(F2))))   &kp LG(LS(LA(LC(F3))))   &kp LG(LS(LA(LC(F10))))
                                             &to BASE &none                   &none    &none
             >;
         };
